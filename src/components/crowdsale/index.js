@@ -181,30 +181,26 @@ export class Crowdsale extends React.Component {
               <div className="left" style={{ width: '42% '}}>
                 <div className="hidden">
                   <div className="left">
-                    <p className="title">{`${tokensClaimed}`}</p>
-                    <p className="description">Tokens Claimed</p>
+                    <p className="title">{`${tokensPerETH}`}</p>
+                    <p className="description">Price (Tokens/ETH)</p>
                   </div>
                   <div className="right">
                     <p className="title">{`${investorsCount}`}</p>
                     <p className="description">Contributors</p>
                   </div>
                 </div>
-                <p className="hash">{`${tokenAddr}`}</p>
-                <p className="description">Token Address</p>
               </div>
               <div className="right" style={{ width: '58%' }}>
                 <div className="hidden">
                   <div className="left">
-                    <p className="title">{`${tokensPerETH}`}</p>
-                    <p className="description">Price (Tokens/ETH)</p>
+
                   </div>
                   <div className="right">
-                    <p className="title">{`${totalSupply}`}</p>
-                    <p className="description">Total Supply</p>
+                    <p className="title">{`${tokensClaimed}`} of {`${totalSupply}`}</p>
+                    <p className="description">Tokens Claimed</p>
                   </div>
                 </div>
-                <p className="hash">{`${crowdsaleAddr}`}</p>
-                <p className="description">Crowdsale Contract Address</p>
+
               </div>
             </div>
           </div>
