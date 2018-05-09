@@ -127,7 +127,7 @@ export class Crowdsale extends React.Component {
     const tokenDecimals = toBigNumber(tokenStore.decimals)
     const maximumSellableTokens = toBigNumber(crowdsalePageStore.maximumSellableTokens)
     const maximumSellableTokensInWei = toBigNumber(crowdsalePageStore.maximumSellableTokensInWei)
-    const ethRaised = toBigNumber(crowdsalePageStore.ethRaised)
+    const ethRaised =  Math.round(toBigNumber(crowdsalePageStore.ethRaised) * 100) / 100
     const tokensSold = toBigNumber(crowdsalePageStore.tokensSold)
     const maxCapBeforeDecimals = maximumSellableTokens.div(`1e${tokenDecimals}`)
 
@@ -143,7 +143,7 @@ export class Crowdsale extends React.Component {
 
     //goal in ETH
     const goalInETHTiers = toBigNumber(web3.utils.fromWei(maximumSellableTokensInWei.toFixed(), 'ether')).toFixed()
-    const goalInETH = goalInETHTiers
+    const goalInETH = Math.round(goalInETHTiers * 100) / 100
     const tokensClaimedRatio = goalInETH > 0 ? ethRaised.div(goalInETH).times(100).toFixed() : '0'
 
     return (
@@ -196,7 +196,7 @@ export class Crowdsale extends React.Component {
                   </div>
                   <div className="right">
                     <p className="title">{`${tokensClaimed}`} of {`${totalSupply}`}</p>
-                    <p className="description">Tokens Claimed</p>
+                    <p className="description">Tokens Sold</p>
                   </div>
                 </div>
 
