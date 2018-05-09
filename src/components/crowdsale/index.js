@@ -177,7 +177,7 @@ export class Crowdsale extends React.Component {
           </div>
          <div className="total-funds-statistics">
             <div className="hidden">
-              <div className="left" style={{ width: '42% '}}>
+              <div className="left" style={{ width: '33% '}}>
                 <div className="hidden">
                   <div className="left">
                     <p className="title">1 ETH = {`${tokensPerETH}`} DEO</p>
@@ -188,7 +188,7 @@ export class Crowdsale extends React.Component {
                   </div>
                 </div>
               </div>
-              <div className="right" style={{ width: '58%' }}>
+              <div className="right" style={{ width: '33%' }}>
                 <div className="hidden">
                   <div className="right">
                     <p className="title">{`${tokensClaimed}`} of {`${totalSupply}`}</p>
@@ -197,7 +197,7 @@ export class Crowdsale extends React.Component {
                 </div>
 
               </div>
-             <div className="right" style={{ width: '58%' }}>
+             <div className="right" style={{ width: '33%' }}>
                 <div className="hidden">
                   <div className="right">
                     <p className="title">{`${investorsCount}`}</p>
