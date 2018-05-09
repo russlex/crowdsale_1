@@ -127,7 +127,7 @@ export class Crowdsale extends React.Component {
     const tokenDecimals = toBigNumber(tokenStore.decimals)
     const maximumSellableTokens = toBigNumber(crowdsalePageStore.maximumSellableTokens)
     const maximumSellableTokensInWei = toBigNumber(crowdsalePageStore.maximumSellableTokensInWei)
-    const ethRaised =  Math.round(toBigNumber(crowdsalePageStore.ethRaised) * 100) / 100
+    const ethRaised =  (toBigNumber(crowdsalePageStore.ethRaised)
     const tokensSold = toBigNumber(crowdsalePageStore.tokensSold)
     const maxCapBeforeDecimals = maximumSellableTokens.div(`1e${tokenDecimals}`)
 
@@ -156,7 +156,7 @@ export class Crowdsale extends React.Component {
                 <p className="total-funds-description">Total Raised Funds</p>
               </div>
               <div className="right">
-                <p className="total-funds-title">{`${goalInETHTiers}`} ETH</p>
+                <p className="total-funds-title">{`${goalInETH}`} ETH</p>
                 <p className="total-funds-description">Goal</p>
               </div>
             </div>
@@ -191,7 +191,7 @@ export class Crowdsale extends React.Component {
               <div className="right" style={{ width: '33%' }}>
                 <div className="hidden">
                   <div className="right">
-                    <p className="title">{`${tokensClaimed}`} DEO of {`${totalSupply}`} DEO to sale</p>
+                    <p className="title">{`${tokensClaimed}`} DEO of {`${totalSupply}`} DEO</p>
                     <p className="description">Tokens Sold</p>
                   </div>
                 </div>
