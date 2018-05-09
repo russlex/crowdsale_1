@@ -42,7 +42,7 @@ export class Crowdsale extends React.Component {
     const { web3 } = web3Store
 
     if (!web3) {
-      this.setState({ loading: false })
+      this.setState({ loading: true })
       return
     }
 
