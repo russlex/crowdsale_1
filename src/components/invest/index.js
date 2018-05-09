@@ -367,16 +367,7 @@ export class Invest extends React.Component {
           />
 
         </div>
-        <div className={rightColumnClasses}>
-          <Form
-            onSubmit={this.investToTokens}
-            component={InvestForm}
-            investThrough={investThrough}
-            updateInvestThrough={this.updateInvestThrough}
-            web3Available={web3Available}
-          />
-          {QRPaymentProcessElement}
-        </div>
+
       </div>
     </div>
   }
