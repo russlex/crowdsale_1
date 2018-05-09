@@ -10,13 +10,7 @@ export function noMetaMaskAlert() {
   });
 }
 
-export function MetaMaskIsLockedAlert() {
- sweetAlert2({
-  title: "Warning",
-  html: "You signed out from Metamask. Open Metamask extension and sign in.",
-  type: "warning"
- });
-}
+
 
 export function noContractDataAlert() {
   sweetAlert2({
