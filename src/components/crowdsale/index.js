@@ -127,7 +127,7 @@ export class Crowdsale extends React.Component {
     const tokenDecimals = toBigNumber(tokenStore.decimals)
     const maximumSellableTokens = toBigNumber(crowdsalePageStore.maximumSellableTokens)
     const maximumSellableTokensInWei = toBigNumber(crowdsalePageStore.maximumSellableTokensInWei)
-    const ethRaised =  (toBigNumber(crowdsalePageStore.ethRaised)
+    const ethRaised =  toBigNumber(crowdsalePageStore.ethRaised)
     const tokensSold = toBigNumber(crowdsalePageStore.tokensSold)
     const maxCapBeforeDecimals = maximumSellableTokens.div(`1e${tokenDecimals}`)
 
