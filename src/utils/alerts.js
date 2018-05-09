@@ -2,13 +2,7 @@ import sweetAlert2 from 'sweetalert2';
 import { weiToGwei } from './utils'
 import { DEPLOYMENT_VALUES } from './constants'
 
-export function noMetaMaskAlert() {
-  sweetAlert2({
-    title: "Warning",
-    html: "You don't have Metamask installed. Check Token Wizard GitHub for <a href='https://github.com/poanetwork/token-wizard' target='blank'>the instruction</a>.",
-    type: "warning"
-  });
-}
+
 
 
 
