@@ -368,13 +368,6 @@ export class Invest extends React.Component {
 
         </div>
         <div className={rightColumnClasses}>
-          <div className="balance">
-            <p className="balance-title">{investorBalance} {tokenTicker}</p>
-            <p className="balance-description">Balance</p>
-            <p className="description">
-              Your balance in tokens.
-            </p>
-          </div>
           <Form
             onSubmit={this.investToTokens}
             component={InvestForm}
