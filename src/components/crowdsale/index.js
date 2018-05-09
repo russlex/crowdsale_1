@@ -147,7 +147,7 @@ export class Crowdsale extends React.Component {
     const tokensClaimedRatio = goalInETH > 0 ? ethRaised.div(goalInETH).times(100).toFixed() : '0'
 
     return (
-      <section className="steps steps_crowdsale-page">
+            <section className="steps steps_crowdsale-page">
       <div className="steps-content container">
           <div className="total-funds">
             <div className="hidden">
@@ -175,28 +175,34 @@ export class Crowdsale extends React.Component {
               <div className="total-funds-chart-active" style={{ width: `${tokensClaimedRatio}%` }}/>
             </div>
           </div>
-          <div className="total-funds-statistics" style={{ text-algin: 'centre'}}>
-      
-              <div className="left" style={{ width: '33%'}}>
- 
+         <div className="total-funds-statistics" style={{ text-algin: 'centre'}}>
+            <div className="hidden">
+              <div className="left" style={{ width: '42% '}}>
+                <div className="hidden">
+                  <div className="left">
                     <p className="title">1 ETH = {`${tokensPerETH}`} DEO</p>
                     <p className="description">Price</p>
-
-              </div>
-                  <div className="hidden" style={{ width: '33%'}}>
+                  </div>
+                  <div className="right">
                     <p className="title">{`${investorsCount}`}</p>
                     <p className="description">Contributors</p>
                   </div>
+                </div>
+              </div>
+              <div className="right" style={{ width: '58%' }}>
+                <div className="hidden">
+                  <div className="left">
 
-              <div className="right" style={{ width: '33%' }}>
-
-                    <p className="title">{`${tokensClaimed}`} DEO of {`${totalSupply}`} DEO</p>
+                  </div>
+                  <div className="right">
+                    <p className="title">{`${tokensClaimed}`} of {`${totalSupply}`}</p>
                     <p className="description">Tokens Sold</p>
+                  </div>
                 </div>
 
               </div>
-
-
+            </div>
+          </div>
         </div>
       </section>
     )
