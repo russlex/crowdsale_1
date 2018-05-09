@@ -175,15 +175,15 @@ export class Crowdsale extends React.Component {
               <div className="total-funds-chart-active" style={{ width: `${tokensClaimedRatio}%` }}/>
             </div>
           </div>
-          <div className="total-funds-statistics" style=" text-align:  center;">
+          <div className="total-funds-statistics" style={{ text-algin: 'centre'}}>
       
-              <div className="left" style={{ width: '33% '}}>
+              <div className="left" style={{ width: '33%'}}>
  
                     <p className="title">1 ETH = {`${tokensPerETH}`} DEO</p>
                     <p className="description">Price</p>
 
               </div>
-                  <div className="right" style={{ width: '33% '}}>
+                  <div className="hidden" style={{ width: '33%'}}>
                     <p className="title">{`${investorsCount}`}</p>
                     <p className="description">Contributors</p>
                   </div>
