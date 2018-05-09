@@ -149,7 +149,8 @@ export class Crowdsale extends React.Component {
 
     return (
       <section className="steps steps_crowdsale-page">
-          <StepNavigation activeStep={CROWDSALE_PAGE}/>
+       <StepNavigation activeStep={CROWDSALE_PAGE}/>
+      <div className="steps-content container">
           <div className="total-funds">
             <div className="hidden">
               <div className="left">
