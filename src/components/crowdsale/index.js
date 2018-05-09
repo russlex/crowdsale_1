@@ -143,7 +143,7 @@ export class Crowdsale extends React.Component {
 
     //goal in ETH
     const goalInETHTiers = toBigNumber(web3.utils.fromWei(maximumSellableTokensInWei.toFixed(), 'ether')).toFixed()
-    const goalInETH = Math.round(goalInETHTiers * 100) / 100
+    const goalInETH = Math.round(goalInETHTiers * 1000) / 1000
     const tokensClaimedRatio = goalInETH > 0 ? ethRaised.div(goalInETH).times(100).toFixed() : '0'
 
     return (
@@ -176,33 +176,27 @@ export class Crowdsale extends React.Component {
             </div>
           </div>
           <div className="total-funds-statistics">
-            <div className="hidden">
-              <div className="left" style={{ width: '42% '}}>
-                <div className="hidden">
-                  <div className="left">
-                    <p className="title">{`${tokensPerETH}`}</p>
-                    <p className="description">Price (Tokens/ETH)</p>
-                  </div>
-                  <div className="right">
+      
+              <div className="left" style={{ width: '33% '}}>
+ 
+                    <p className="title">1 ETH = {`${tokensPerETH}`} DEO</p>
+                    <p className="description">Price</p>
+
+              </div>
+                  <div className="centre" style={{ width: '33% '}}>
                     <p className="title">{`${investorsCount}`}</p>
                     <p className="description">Contributors</p>
                   </div>
-                </div>
-              </div>
-              <div className="right" style={{ width: '58%' }}>
-                <div className="hidden">
-                  <div className="left">
 
-                  </div>
-                  <div className="right">
-                    <p className="title">{`${tokensClaimed}`} of {`${totalSupply}`}</p>
+              <div className="right" style={{ width: '33%' }}>
+
+                    <p className="title">{`${tokensClaimed}`} DEO of {`${totalSupply}`} DEO</p>
                     <p className="description">Tokens Sold</p>
-                  </div>
                 </div>
 
               </div>
-            </div>
-          </div>
+
+
         </div>
       </section>
     )
