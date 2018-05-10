@@ -163,7 +163,7 @@ export class Crowdsale extends React.Component {
           </div>
           <div className="total-funds-chart-container">
             <div className="total-funds-chart-division" style={{ left: '11%' }}>
-               <p class="x">Pre Sale</p>
+               <p id="x">Pre Sale</p>
             </div>
             <div className="total-funds-chart-division" style={{ left: '15%' }}>
                <p className="description">Soft Cap</p>
