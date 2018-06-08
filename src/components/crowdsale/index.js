@@ -139,7 +139,7 @@ export class Crowdsale extends React.Component {
     const tokensPerETH = rateInETH.pow(-1).decimalPlaces(0).toFixed()
 
     //total supply
-    const totalSupply =  Math.round(maxCapBeforeDecimals.toFixed() * 100) / 100
+    const totalSupply = 625
 
     //goal in ETH
     const goalInETHTiers = toBigNumber(web3.utils.fromWei(maximumSellableTokensInWei.toFixed(), 'ether')).toFixed()
