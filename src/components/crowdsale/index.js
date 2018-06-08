@@ -127,7 +127,7 @@ export class Crowdsale extends React.Component {
     const tokenDecimals = toBigNumber(tokenStore.decimals)
     const maximumSellableTokens = toBigNumber(crowdsalePageStore.maximumSellableTokens)
     const maximumSellableTokensInWei = toBigNumber(crowdsalePageStore.maximumSellableTokensInWei)
-    const ethRaised =  Math.round(toBigNumber(crowdsalePageStore.ethRaised)*100)/100
+    const ethRaised = toBigNumber(crowdsalePageStore.ethRaised)
     const tokensSold = toBigNumber(crowdsalePageStore.tokensSold)
     const maxCapBeforeDecimals = maximumSellableTokens.div(`1e${tokenDecimals}`)
 
@@ -162,7 +162,12 @@ export class Crowdsale extends React.Component {
             </div>
           </div>
           <div className="total-funds-chart-container">
-
+        <div className="total-funds-chart-division" style={{ left: '11%' }}>
+               <p id="pre">Pre Sale</p>
+            </div>
+            <div className="total-funds-chart-division" style={{ left: '15%' }}>
+               <p id="soft">Soft Cap</p>
+            </div>
             <div className="total-funds-chart">
               <div className="total-funds-chart-active" style={{ width: `${tokensClaimedRatio}%` }}/>
             </div>
