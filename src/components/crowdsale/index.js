@@ -162,7 +162,12 @@ export class Crowdsale extends React.Component {
             </div>
           </div>
           <div className="total-funds-chart-container">
-     
+             <div className="total-funds-chart-division" style={{ left: '0%' }}>
+              
+            </div>
+            <div className="total-funds-chart-division" style={{ left: '0%' }}>
+              
+            </div>
             <div className="total-funds-chart">
               <div className="total-funds-chart-active" style={{ width: `${tokensClaimedRatio}%` }}/>
             </div>
