@@ -189,7 +189,7 @@ export class Crowdsale extends React.Component {
               <div className="right" style={{ width: '46%' }}>
                 <div className="hidden">
                   <div className="right">
-                    <p className="title">{`${tokensClaimed}`} DEO of {`${totalSupply}`} DEO</p>
+                    <p className="title">{`${tokensClaimed}`} of {`${totalSupply}`} DEO</p>
                     <p className="description">Tokens Sold</p>
                   </div>
                 </div>
