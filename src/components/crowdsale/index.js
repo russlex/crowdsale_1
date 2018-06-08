@@ -195,7 +195,7 @@ export class Crowdsale extends React.Component {
 
               </div>
              <div className="right" style={{ width: '20%' }}>
-                <div className="hidden">
+                <div className="hidden" style={{ display: 'none' }}>
                   <div className="right">
                     <p className="title">{`${investorsCount}`}</p>
                     <p className="description">Contributors</p>
