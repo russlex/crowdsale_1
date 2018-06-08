@@ -145,6 +145,7 @@ export class Crowdsale extends React.Component {
     const goalInETHTiers = toBigNumber(web3.utils.fromWei(maximumSellableTokensInWei.toFixed(), 'ether')).toFixed()
     const goalInETH = 625
     const tokensClaimedRatio = goalInETH > 0 ? ethRaised.div(goalInETH).times(100).toFixed() : '0'
+    const ethRaisedDec = Math.round(ethRaised * 100)/100
 
     return (
             <section className="steps steps_crowdsale-page">
@@ -152,7 +153,7 @@ export class Crowdsale extends React.Component {
           <div className="total-funds">
             <div className="hidden">
               <div className="left">
-                <p className="total-funds-title">{`${ethRaised}`} ETH</p>
+                <p className="total-funds-title">{`${ethRaisedDec}`} ETH</p>
                 <p className="total-funds-description">Total Raised Funds</p>
               </div>
               <div className="right">
