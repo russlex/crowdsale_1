@@ -139,7 +139,7 @@ export class Crowdsale extends React.Component {
     const tokensPerETH = rateInETH.pow(-1).decimalPlaces(0).toFixed()
 
     //total supply
-    const totalSupply = Math.round(maxCapBeforeDecimals.toFixed() * 100) / 100
+    const totalSupply = 2500000
 
     //goal in ETH
     const goalInETHTiers = toBigNumber(web3.utils.fromWei(maximumSellableTokensInWei.toFixed(), 'ether')).toFixed()
@@ -170,12 +170,12 @@ export class Crowdsale extends React.Component {
                <p id="soft">Soft Cap</p>
             </div>
             <div className="total-funds-chart">
-              <div className="total-funds-chart-active" style={{ width: `${tokensClaimedRatio}%` }}/>
+              <div className="total-funds-chart-active" style={{ width: `${tokensClaimedRatio}+10%` }}/>
             </div>
           </div>
          <div className="total-funds-statistics">
             <div className="hidden">
-              <div className="left" style={{ width: '33% '}}>
+              <div className="left" style={{ width: '40% '}}>
                 <div className="hidden">
                   <div className="left">
                     <p className="title">1 ETH = {`${tokensPerETH}`} DEO</p>
