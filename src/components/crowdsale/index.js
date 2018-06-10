@@ -146,6 +146,7 @@ export class Crowdsale extends React.Component {
     const goalInETH = 625
     const tokensClaimedRatio = goalInETH > 0 ? ethRaised.div(goalInETH).times(100).toFixed() : '0'
     const ethRaisedDec = Math.round(ethRaised * 100)/100
+    const tokensClaimedRatioDec = tokensClaimedRatio + 10
 
     return (
             <section className="steps steps_crowdsale-page">
@@ -170,7 +171,7 @@ export class Crowdsale extends React.Component {
                <p id="soft">Soft Cap</p>
             </div>
             <div className="total-funds-chart">
-              <div className="total-funds-chart-active" style={{ width: `${tokensClaimedRatio}+10%` }}/>
+              <div className="total-funds-chart-active" style={{ width: `${tokensClaimedRatioDec}%` }}/>
             </div>
           </div>
          <div className="total-funds-statistics">
