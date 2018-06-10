@@ -146,7 +146,7 @@ export class Crowdsale extends React.Component {
     const goalInETH = 625
     const tokensClaimedRatio = goalInETH > 0 ? ethRaised.div(goalInETH).times(100).toFixed() : '0'
     const ethRaisedDec = Math.round(ethRaised * 100)/100
-    const tokensClaimedRatioDec = tokensClaimedRatio + 10
+    const tokensClaimedRatioDec = tokensClaimedRatio *1.8
 
     return (
             <section className="steps steps_crowdsale-page">
